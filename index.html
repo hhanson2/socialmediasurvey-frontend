@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="survey-container">
+        <h1>Social Media Survey</h1>
+        <p class="intro">A few questions about how social media feels right now. Answer as much or as little as you want.</p>
+
+        <form id="surveyForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="question_1">1. When you open social media today, what do you actually see vs what do you WANT to see?</label>
+            <textarea id="question_1" name="question_1" rows="3" required></textarea>
+
+            <label for="question_2">2. What percentage of your feed is people you actually know?</label>
+            <input type="text" id="question_2" name="question_2" placeholder="e.g. about 20%" required>
+
+            <label for="question_3">3. What percentage of what you see feels "real" to you?</label>
+            <input type="text" id="question_3" name="question_3" placeholder="e.g. half of it" required>
+
+            <label for="question_4">4. Have you noticed AI-generated content creeping in?</label>
+            <textarea id="question_4" name="question_4" rows="2" required></textarea>
+
+            <label for="question_5">5. Does it bother you or have you just accepted it?</label>
+            <textarea id="question_5" name="question_5" rows="2" required></textarea>
+
+            <label for="question_6">6. Do you edit your photos before posting?</label>
+            <textarea id="question_6" name="question_6" rows="2" required></textarea>
+
+            <label for="question_7">7. How long does it take? Do you overthink what to post?</label>
+            <textarea id="question_7" name="question_7" rows="3" required></textarea>
+
+            <label for="question_8">8. Has posting become exhausting?</label>
+            <textarea id="question_8" name="question_8" rows="3" required></textarea>
+
+            <label for="question_9">9. If you could design social media from scratch, what would be different? What would you keep? What would you throw out entirely?</label>
+            <textarea id="question_9" name="question_9" rows="5" required></textarea>
+
+            <button type="submit" id="submitBtn">Submit Survey</button>
+        </form>
+
+        <p id="message" role="status"></p>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
